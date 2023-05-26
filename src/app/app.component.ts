@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'TareaCompleta';
+  
+    colores=[
+    {tipo:"frio",nombre:"verde",clasificacion:"primario"},
+    {tipo:"frio",nombre:"azul",clasificacion:"primario"},
+    {tipo:"calido",nombre:"rojo",clasificacion:"primario"},
+    {tipo:"frio",nombre:"cian",clasificacion:"secundario"},
+    {tipo:"frio",nombre:"magenta",clasificacion:"secundario"},
+    {tipo:"calido",nombre:"amarillo",clasificacion:"secundario"}
+  ];
 }
